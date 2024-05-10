@@ -1,6 +1,11 @@
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello World");
+        int[] array = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+        quick_sort(array, 0, array.length - 1);
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
     }
 
     public static void quick_sort(int[] array, int low, int high) {
